@@ -30,12 +30,6 @@ namespace WpfApp1
         private async void Submit_Button_Click(object sender, RoutedEventArgs e)
         {
 
-            if (Application.Current.Properties["ID"] == null)
-            {
-                MessageBox.Show("NOT LOGGED IN");
-
-                return;
-            }
 
             // create new restclient class, with the base url filled in the ()
             var client = new RestClient("apage");
